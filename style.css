@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+
+@media only screen and (min-width: 950px) {
+    .post-header {
+        opacity: 0;
+        transition: opacity 500ms linear;
+    }
+    .container:hover .post-header {
+        transition: opacity 500ms linear;
+        opacity: 1;
+    }
+    hr {
+        display: none
+    }
+    header nav ul li {
+        margin-left:75px;
+        margin-right: 75px;
+    }
+
+    main {
+        padding: 0 40px 0 40px;
+    }
+    .left {
+        float:left;
+        width:50%;
+    }
+    .description {
+        margin-top: 10px;
+    }
+    .about-us {
+        display: block;
+        float:right;
+        width: 50%;
+        margin-top: 35px;
+    }
+    .about-us img {
+        width:100%;
+        object-fit: cover;
+        height: 150px;
+    }
+    .gallery-header h2{
+        opacity: 0;
+    }
+    .gallery-image {
+        flex-basis: 300px;
+        -webkit-flex-basis: 300px;
+        -moz-flex-basis: 300px;
+    }
+}
+
+
+/* .about-us {
+    display:none;
+} */
+.banner-image {
+    width:100%;        
+}
+.banner-image img {
+    width:100%;
+    object-fit: cover;
+    height:200px;
+}
+.gallery-image img {
+    border-radius: 50%;
+    width: 100%;
+}
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -moz-flex;
+    -moz-flex-flow: row wrap;
+    justify-content: center;
+    -o-flex-flow: row wrap;
+    justify-content: center;
+}
+.gallery-image {
+    margin: 10px;
+    width:50%;
+    text-align:center;
+    -webkit-flex-basis: 50vw;
+    -moz-flex-basis: 50vw;
+    flex-basis: 50vw;
+        
+}
+.container {
+    position: relative;
+}
+.post-header {
+    font-family: Open Sans Condensed, sans-serif;
+    font-size: 20px;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: white;
+    text-shadow: 3px 3px 9px #000000;
+    width:max-content;
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+body {
+    background-color:rgb(238, 218, 204);
+}
+header .header-banner {
+    width:100%;
+    height: calc(100vh-500px);
+    display: table;
+    
+}
+header h1 {
+    font-family: Gentium Basic, serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+header h2 {
+    font-family: Open Sans Condensed, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+header .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 8px 8px;
+}
+header nav ul li a {
+    font-family: Open Sans Condensed, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-decoration:none;
+}
+footer {
+    width: calc(100%-80px);
+    padding: 30px 15px 15px 15px;
+    background-color: chocolate;
+    margin-top: 20px;
+    overflow: hidden;
+}
+footer ul {
+    width: fit-content;
+    float:left;
+    padding-left: 0;
+    list-style: none;
+}
+footer ul li {
+    display: block;
+    padding: 0 0 10px 0;
+}
+footer ul li p {
+    font-family: Open Sans Condensed, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration:none;
+}
+.footer-sm {
+    width: 36px;
+    float:right;
+}
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+hr {
+    border-color: #201c0f;
+    border-width: 2px;
+    width:190px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.gallery-header {
+    font-family: Gentium Basic, serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 3px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #3a383d;
+    text-align: left;
+}
+.description h2 {
+    font-family: Gentium Basic, serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-left: 10px;
+    color: #3a383d;
+    text-align: left;
+}
+.description p {
+    font-family: Open Sans Condensed, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 0 20px 10px 20px;
+    line-height: 30px;
+}
