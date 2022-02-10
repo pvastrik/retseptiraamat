@@ -1,58 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&display=swap');
 
-@media only screen and (min-width: 950px) {
-    .post-header {
-        opacity: 0;
-        transition: opacity 500ms linear;
-    }
-    .container:hover .post-header {
-        transition: opacity 500ms linear;
-        opacity: 1;
-    }
-    hr {
-        display: none
-    }
-    header nav ul li {
-        margin-left:75px;
-        margin-right: 75px;
-    }
-
-    main {
-        padding: 0 40px 0 40px;
-    }
-    .left {
-        float:left;
-        width:50%;
-    }
-    .description {
-        margin-top: 10px;
-    }
-    .about-us {
-        display: block;
-        float:right;
-        width: 50%;
-        margin-top: 35px;
-    }
-    .about-us img {
-        width:100%;
-        object-fit: cover;
-        height: 150px;
-    }
-    .gallery-header h2{
-        opacity: 0;
-    }
-    .gallery-image {
-        flex-basis: 300px;
-        -webkit-flex-basis: 300px;
-        -moz-flex-basis: 300px;
-    }
-}
 
 
-/* .about-us {
+.about-us {
     display:none;
-} */
+}
 .banner-image {
     width:100%;        
 }
@@ -216,4 +169,75 @@ hr {
     font-weight: 300;
     padding: 0 20px 10px 20px;
     line-height: 30px;
+}
+
+@media only screen and (min-width: 950px) {
+    .post-header {
+        opacity: 0;
+        transition: opacity 500ms linear;
+    }
+    .container:hover .post-header {
+        transition: opacity 500ms linear;
+        opacity: 1;
+    }
+    hr {
+        display: none
+    }
+    header nav ul li {
+        margin-left:75px;
+        margin-right: 75px;
+    }
+    .header-banner h1 {
+        letter-spacing: 5px;
+        font-size: 50px;
+    }
+    .header-banner h2 {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    main {
+        padding: 0 40px 0 40px;
+    }
+    .left {
+        float:left;
+        width:50%;
+        overflow: hidden;
+    }
+    .left h2 {
+        font-size: 30px;
+    }
+    .description {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    
+    .about-us {
+        display: block;
+        float:right;
+        width: 45%;
+        margin-top: 50px;
+        margin-right: 20px;
+        height:200px;
+    }
+    .about-us img {
+        width:100%;
+        object-fit: cover;
+        height: 175px;
+    }
+    main .gallery-header h2{
+        opacity: 0;
+    }
+    .gallery-image {
+        flex-basis: 270px;
+        -webkit-flex-basis: 270px;
+        -moz-flex-basis: 270px;
+    }
+    .gallery-links {
+        flex-wrap:nowrap;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    footer {
+        padding: 30px 40px 15px 40px;
+    }
 }
